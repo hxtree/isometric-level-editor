@@ -1,0 +1,61 @@
+fieldMap.properties = {
+	tileset = "0",
+	background = "red",
+	location = {"new","0"},
+	encounterRate = 0,
+	nativeBGS = "",
+}
+
+fieldMap.save = {
+}
+
+fieldMap.temp = { 
+}
+
+-- # {level{row{column}}}
+fieldMap.grid = {
+{
+{0, 0, 0,0, 0, 0, 0, 1, 1,},
+{0, 0, 0, 0, 0, 0, 1, 1,},
+{0, 0, 0,0, 0, 0, 0, 1, 1, 1},
+{0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1,},
+{0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1,},
+{0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1,},
+{0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1,},
+{0, 0, 0,0, 0, 0, 0, 1, 1,},
+{0, 0, 0, 0, 0, 0, 1, 1,},
+{0, 0, 0,0, 0, 0, 0, 1, 1, 1},
+{0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1,},
+}
+},
+}
+
+-- # = image, function, row[3], column[4], frame[5], any additional properites you want
+fieldMap.objects = {
+[1] = {"trainWall",function()
+	end, 1, 8, 1,},
+[2] = {"trainWall",function()
+	end, 1, 8, 2,},
+[3] = {"trainWall",function()
+	end, 1, 8, 3,},
+[4] = {"trainWall",function()
+	end, 1, 8, 3,},
+}
+
+-- # = row, column, (up[4] , right[5], down[6], left[7],)passible?, collision activated func()
+fieldMap.tiles = {
+   [0] = {2,1,true,true,true,true,function() end}, 
+   [1] = {3,1,true,true,true,true,function() end}, 
+   [2] = {1,2,true,true,true,true,function() end}, 
+   [3] = {1,1,true,true,true,true,function() end}, 
+   [4] = {1,2,true,true,true,true,function() end}, 
+}
+
+-- character = name[1], image[2], level[3], row[4], column[5], facing[6], frame[7], x ofset[8], y ofset[9], interaction function,
+fieldMap.characters = {
+[1] = {"n/a",Image.load("animations/meekuOni/walk.png"),1,4,2,1,1,0,0, function() end},
+}
+
+function fieldMap:main()
+
+end
